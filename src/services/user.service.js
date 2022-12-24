@@ -1,8 +1,8 @@
 
 export default class UserService {
-    constructor(opts) {
+    constructor() {
     }
 
-    async getUserById(userId) {
+    async getUserById() {
     }
-};
+}

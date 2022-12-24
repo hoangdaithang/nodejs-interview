@@ -1,12 +1,15 @@
 import Response from './response';
-import JwtUtils from './jwt.helper';
 import Validator from './validator';
 import Wrapper from './wrapper';
-
+import BcryptUtils from './bcrypt.utils'
+import JwtUtils from  './jwt.utils'
+import ObjectUtils from './object.utils'
 
 export {
     Response,
-    JwtUtils,
     Validator,
-    Wrapper
+    Wrapper,
+    BcryptUtils,
+    JwtUtils,
+    ObjectUtils
 };

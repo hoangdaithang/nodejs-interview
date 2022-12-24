@@ -47,4 +47,12 @@ export default class AppError {
             params
         );
     }
+    static InterServerError(message, params = null) {
+        return new BaseError(
+            message,
+            HTTPStatus[HTTPStatus.INTERNAL_SERVER_ERROR],
+            HTTPStatus.INTERNAL_SERVER_ERROR,
+            params
+        );
+    }
 }

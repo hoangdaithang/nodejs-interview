@@ -1,7 +1,9 @@
 import { asClass, createContainer, InjectionMode } from 'awilix';
-// import {
-//     UserRepository,
-// } from '../repositories';
+import {
+    UserRepository,
+    TokenRepository,
+    RefreshTokenRepository
+} from '../repositories';
 import {
     AuthService,
     UserService,
@@ -13,9 +15,11 @@ import {
 } from '../controllers';
 const container = createContainer({ injectionMode: InjectionMode.PROXY });
 
-// container.register({
-//     userRepository: asClass(UserRepository).singleton()
-// });
+container.register({
+    userRepository: asClass(UserRepository).singleton(),
+    tokenRepository: asClass(TokenRepository).singleton(),
+    refreshTokenRepository: asClass(RefreshTokenRepository).singleton()
+});
 
 container.register({
     authService: asClass(AuthService).singleton(),
