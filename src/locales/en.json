@@ -1,0 +1,6 @@
+{
+    "AUTHORIZATION_ERROR": "Authorization is invalid",
+    "TOKEN_ERROR": "Token is invalid or expired",
+    "CODE_ERROR": "Code is invalid or expired",
+    "USER_NOT_FOUND": "User is not found"
+}
