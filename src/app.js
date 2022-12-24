@@ -25,9 +25,7 @@ app.use('*', NotFoundHander);
 app.use(ErrorHandler);
 
 const server = Http.createServer(app);
-process.on('uncaughtException', function (err) {
-    global.logger.error(err);
-});
+process.on('uncaughtException', function () {});
 
 server.listen(process.env.PORT, async () => {
     console.log('Server run in port:' + process.env.PORT);

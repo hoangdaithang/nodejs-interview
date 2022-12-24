@@ -10,6 +10,22 @@ export default class Response {
         });
     }
 
+    static created(res, data = null, pageInfo = undefined) {
+        res.status(HTTPStatus.CREATED).json({
+            data,
+            statusCode: HTTPStatus.CREATED,
+            pageInfo
+        });
+    }
+
+    static logout(res, data = null, pageInfo = undefined) {
+        res.status(HTTPStatus.CREATED).json({
+            data,
+            statusCode: HTTPStatus.NO_CONTENT,
+            pageInfo
+        });
+    }
+
     static error(req, res, error) {
         console.log({ message: error.message, Error: error });
         const code = error.inner ? error.inner.code : error.code;

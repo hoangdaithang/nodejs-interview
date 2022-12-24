@@ -1,6 +1,6 @@
 const { checkSchema } = require('express-validator');
 
-export const signUpValidator = checkSchema({
+export const signinValidator = checkSchema({
     email: {
         in: ['body'],
         notEmpty: {

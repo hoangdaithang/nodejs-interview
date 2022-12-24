@@ -1,3 +1,3 @@
-import { signUpValidator } from './users';
+import { signUpValidator, signinValidator } from './users';
 
-export { signUpValidator };
+export { signUpValidator, signinValidator };
